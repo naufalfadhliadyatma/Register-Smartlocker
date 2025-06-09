@@ -81,7 +81,7 @@ class CreateAccountScreen extends StatelessWidget {
 
             // ======== Judul dan Deskripsi Halaman Register ========
             Positioned(
-              top: size.height * 0.12,
+              top: size.height * 0.1,
               left: 22,
               right: 22,
               child: Column(
@@ -96,7 +96,7 @@ class CreateAccountScreen extends StatelessWidget {
                       color: Colors.white,
                     ),
                   ),
-                  SizedBox(height: 8),
+                  SizedBox(height: 0),
                   Text(
                     'your Account',
                     style: TextStyle(
@@ -106,7 +106,7 @@ class CreateAccountScreen extends StatelessWidget {
                       color: Colors.white,
                     ),
                   ),
-                  SizedBox(height: 12),
+                  SizedBox(height: 1),
                   Text(
                     'Enter your email and password to log in',
                     style: TextStyle(
