@@ -1,31 +1,30 @@
+// main.dart
 import 'package:flutter/material.dart';
-import 'routes/app_routes.dart';
+import 'screens/register/sign_in.dart';
 import 'screens/register/create_account.dart';
 import 'screens/register/email_verification.dart';
-import 'screens/register/sign_in.dart';
 
 void main() {
-  runApp(const SmartLockerApp());
+  runApp(const MyApp());
 }
 
-class SmartLockerApp extends StatelessWidget {
-  const SmartLockerApp({super.key});
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'SmartLocker',
+      title: 'Smart Locker',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        fontFamily: 'Inter',
         useMaterial3: true,
       ),
-      initialRoute: AppRoutes.signIn,
+      initialRoute: '/sign-in',
       routes: {
-        AppRoutes.signIn: (context) => const SignInScreen(),
-        AppRoutes.createAccount: (context) => const CreateAccountScreen(),
-        AppRoutes.emailVerification: (context) =>
-            const EmailVerificationScreen(),
+        '/sign-in': (context) => const SignInScreen(),
+        '/create-account': (context) => const CreateAccountScreen(),
+        '/email-verification': (context) => const EmailVerificationScreen(),
       },
     );
   }

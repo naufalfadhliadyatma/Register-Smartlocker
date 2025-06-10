@@ -264,6 +264,7 @@ class CreateAccountScreen extends StatelessWidget {
                     PrimaryButton(
                       text: 'Create Account',
                       onPressed: () {
+                        Navigator.pushNamed(context, '/verify');
                         // TODO: Tambahkan logika pendaftaran akun
                       },
                     ),
